@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head></head>
+  <meta charset="UTF-8">
+  <title>Sports Club</title>
+
+  <link rel="stylesheet" href="./stylesheets/formstyle.css">
+</head>
+
+<body>
+ <div class="img">
+  <div id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="form.html">Sports Club Form</a></li>
+      </ul>
+    </div>
+  </div>
+
+ 
+  <div class="regform">
+    <h1>Sports Club</h1>
+  </div>
+
+  
+  <div class="main">
+    <form id="sportsForm">
+      
+      <div id="name">
+        <h2 class="name">Name</h2>
+        <input id="firstname" type="text" required name="first_name"><br>
+        <label id="firstlabel"> first name</label>
+        <input id="lastname" type="text" required name="last_name"><br>
+        <label id="lastlabel"> last name</label>
+      
+
+
+      </div>
+    <h2 class="name">Junior (9-12) or Senior teen (13-17)? </h2>
+    <input id="profession" type="text" placeholder="junior/senior" name="profession">
+   
+    <h2 class="name">Email</h2>
+    <input id="email" type="text" required name="email">
+    <h2 class="name">Date of Birth</h2>
+    <input id="dateofbirth" type="date" required name="dateofbirth">
+
+    <h2 class="name">Mobile Number</h2>
+    <input id="mobile" type="mobile"  name="mobile" required pattern="[789][0-9]{9}">
+
+  <h2 class="name">Province/Territory</h2>
+   <select id="province" name="province">
+   <option disabled="disabled" required selected="selected">--choose</option>
+   <option>Ontario</option>
+   <option>Quebec</option>
+   <option>Saskatchewan</option>
+   <option>New Brunswick</option>
+   <option>Nova Scotia</option>
+   <option>Prince Edward's Island</option>
+   <option>Newfoundland and Labrador</option>
+   <option>British Columbia</option>
+   <option>Alberta</option>
+   <option>Manitoba</option>
+   <option>Northwest Territories</option>
+   <option>Nunavut</option>
+   <option>Yukon</option>
+   </select>
+
+   
+
+  <h2 id="sportoptions">What sport(s) would you like to play?</h2>
+  <div class="arrange">
+  <input type="checkbox" name="sportoptions" value="Basketball" id="cb1">
+  <label for="cb1">Basketball</label><br>
+  <input type="checkbox" name="sportoptions" value="Soccer" id="cb2">
+  <label for="cb2">Soccer</label><br>
+  <input type="checkbox" name="sportoptions" value="Badminton" id="cb3">
+  <label for="cb3">Badminton</label><br>
+  <input type="checkbox" name="sportoptions" value="Baseball" id="cb4">
+  <label for="cb4">Baseball</label><br>
+  <input type="checkbox" name="sportoptions" value="Hockey" id="cb5">
+  <label for="cb5">Hockey</label><br>
+  <input type="checkbox" name="sportoptions" value="Football/Rugby" id="cb6">
+  <label for="cb5">Football/Rugby</label><br>
+  
+  </div>
+
+  <input id="submit" type="submit" onclick="submitForm()">
+
+  <h2 id="centers">Sport Club Centers Near You: <span id="result"></span><br>
+
+
+    </form>
+  </div>
+
+
+ 
+  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase.js"></script>
+  <script src="./scripts/testingScript.js"></script>
+</div>
+</body>
+
+</html>

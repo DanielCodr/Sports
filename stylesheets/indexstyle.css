@@ -1,0 +1,61 @@
+body {
+   
+    font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+    color: blue;
+    overflow-x: hidden;
+    padding-bottom: 45px;
+    margin-top: 37.5px;
+    background:linear-gradient(lightcoral, coral)
+  }
+  
+  .img{
+    background:radial-gradient(rgba(2, 60, 77, 0.6), rgba(87,0,210,0.6)),
+    url(https://media.gq.com/photos/5e99bf6fe5102200088e8eb2/3:4/w_1107,h_1476,c_limit/GQ-MichaelJordan-041720.jpg);
+    
+    height:2000px;
+    background-size:100%;
+    background-position:center;
+    background-repeat:no-repeat;
+      
+  }
+  #navbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+
+  #navbar ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+    
+ #navbar ul li {
+    list-style: none;
+  }
+
+  #navbar ul li a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: red;
+    font-size: 0.865em;
+    text-decoration: none;
+    padding: 1.01em;
+    white-space: nowrap;
+    letter-spacing: 1.001px;
+  }
+   
+  #navbar ul li a:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.822);
+  }
+
+  h1 {
+    text-align: center;
+    justify-content:center;
+    color: aqua;
+  }
+
+  p {
+ background-color: yellow
+  }
